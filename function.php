@@ -6,7 +6,7 @@
     else if($_GET['add'] != 0) $tql += $_GET['add'];
     else if($_GET['snap'] == 1) $tql ++ ;
     else if($_GET['snap'] == -1 and $tql != 0) $tql -- ;
-    else if($_GET['snap'] == 0) $tql = 0 ;
+    else if($_GET['snap'] == -2) $tql = 0 ;
     $upd = fopen("counter.txt","w");
     fwrite($upd,$tql);
     echo $tql;

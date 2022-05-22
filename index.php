@@ -19,7 +19,7 @@
                     $("#snap").load("function.php?snap=-1").fadeToggle("fast").fadeToggle("fast");
                 });
                 $("button#clear").click(function(){
-                    $("#snap").load("function.php?snap=0").fadeToggle("fast").fadeToggle("fast");
+                    $("#snap").load("function.php?snap=-2").fadeToggle("fast").fadeToggle("fast");
                 });
                 $("button#add").click(function(){
                     $("#snap").load("function.php?add="+$("input#add").val()).fadeToggle("fast").fadeToggle("fast");
